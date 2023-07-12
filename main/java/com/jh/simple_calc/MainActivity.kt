@@ -1,11 +1,14 @@
 package com.jh.simple_calc
 
-
+//import
 import android.os.Build.VERSION_CODES.R
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+
+
+//MainActivity
 
 class MainActivity : AppCompatActivity() {
     private lateinit var editText: TextView
@@ -25,6 +28,9 @@ class MainActivity : AppCompatActivity() {
         textView = findViewById(R.id.TextView)
     }
 
+
+
+    //계산 service
 
     fun onButtonClick(v: View) {
         val btn = v as Button
@@ -66,3 +72,8 @@ class MainActivity : AppCompatActivity() {
 private fun Any.onCreate(savedInstanceState: Bundle?) {
     TODO("Not yet implemented")
 }
+
+
+
+@Test
+//com.com.jh.simple_calc

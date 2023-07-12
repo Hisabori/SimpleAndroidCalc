@@ -8,6 +8,9 @@
                 android:paddingTop="@dimen/activity_vertical_margin"
                 tools:context=".MainActivity">
 
+
+        //textView
+
     <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -16,10 +19,15 @@
             android:textSize="24sp"
             android:gravity="end" />
 
+        //Layout
+
     <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
+
+        //Layout_Button
 
         <Button
                 android:id="@+id/button_1"
@@ -46,4 +54,9 @@
                 android:text="3" />
 
     </LinearLayout>
+
+    //Layout_End
+
+
 </RelativeLayout>
+//Code_end
