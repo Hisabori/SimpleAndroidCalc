@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <application
+
+    <!--Application_INFO-->
+    <!--String Value-->
+        <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name"
@@ -12,11 +15,12 @@
                 android:exported="false">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
+                <!--TO DO-->
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
 
             <!--TextView 추가-->
+            <!--TO DO-->
             <activity
                 android:name=".TextViewActivity"
                 android:exported="true">
