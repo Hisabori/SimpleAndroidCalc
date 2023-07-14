@@ -11,13 +11,14 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var editText: EditText
-    private lateinit var button: Button
-    private lateinit var textView: TextView
-    private val input = StringBuilder()
-    private var num1: Double = 0.0
-    private var num2: Double = 0.0
-    private var operator: String? = null
+    //var (private)
+    private lateinit var editText: EditText //EditText
+    private lateinit var button: Button //Button
+    private lateinit var textView: TextView //TextView
+    private val input = StringBuilder() //StringBuilder
+    private var num1: Double = 0.0 //value init (reset) - num1
+    private var num2: Double = 0.0 //value init (reset) - num2
+    private var operator: String? = null //null value (초기화)
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,11 +60,12 @@ class MainActivity : AppCompatActivity() {
     private fun calculate() {
         var result = 0.0
 
+        //operator
         when (operator) {
-            "+" -> result = num1 + num2
-            "-" -> result = num1 - num2
-            "*" -> result = num1 * num2
-            "/" -> result = num1 / num2
+            "+" -> result = num1 + num2 //plus
+            "-" -> result = num1 - num2 //minus
+            "*" -> result = num1 * num2 // (x)
+            "/" -> result = num1 / num2 // (/)
         }
 
         input.append(result)
